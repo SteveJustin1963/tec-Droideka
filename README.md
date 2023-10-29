@@ -1,4 +1,4 @@
-# tec-Droideka-
+# tec-Droideka
 make somethign with the tec1
 
 ## Ref
