@@ -1,0 +1,73 @@
+// simple sudo code (or pseudocode) to provide an idea for controlling a Droideka's rolling and walking.
+// highly simplified and is just a starting point.
+// rough representation of the control logic for movement. 
+// In reality, a real-world system would involve more complex algorithms for 
+// balance, kinematics for leg movement, fine-tuned motor control, and sophisticated sensor feedback loops.
+
+
+
+// Definitions
+enum Mode { ROLLING, WALKING }
+Mode currentMode = Mode.WALKING
+
+// Sensors input
+input gyroscopicData
+input directionCommand
+input speedCommand
+
+// Motor outputs
+output legMotors
+output rollMotors
+
+function changeMode(newMode: Mode) {
+    if newMode == Mode.ROLLING:
+        retractLegs()
+        activateRollMotors()
+    else:
+        extendLegs()
+        activateLegMotors()
+    currentMode = newMode
+
+function retractLegs():
+    // Logic to retract legs for rolling
+
+function extendLegs():
+    // Logic to extend legs for walking
+
+function activateRollMotors():
+    // Logic to activate the rolling mechanism
+
+function activateLegMotors():
+    // Logic to activate the leg movement mechanism
+
+function regulateSpeed(speed: float):
+    if currentMode == Mode.ROLLING:
+        // Adjust rollMotor speed
+    else:
+        // Adjust legMotor speed for walking
+
+function balanceControl():
+    if currentMode == Mode.ROLLING:
+        // Use gyroscopic data to maintain balance while rolling
+    else:
+        // Use gyroscopic data to maintain balance while walking
+
+function moveDirection(direction: float):
+    if currentMode == Mode.ROLLING:
+        // Logic to roll in the desired direction
+    else:
+        // Logic to walk in the desired direction
+
+while TRUE:
+    // Main loop
+    if receivedChangeModeCommand():
+        changeMode(receivedMode())
+    
+    balanceControl()
+
+    regulateSpeed(speedCommand)
+
+    moveDirection(directionCommand)
+
+    delay(0.01) // delay for 10ms or an appropriate time slice
+
