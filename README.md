@@ -1,4 +1,8 @@
 # tec-Droideka
+
+![image](https://github.com/user-attachments/assets/9fb9a163-e26e-42c5-acf5-b614e5f76958)
+
+
 Droidekas, also known as destroyer droids, are fictional, deadly, rolling combat droids from the Star Wars universe. Below, I've detailed their features as portrayed in the Star Wars films and series, and a hypothetical plan for creating a real-life Droideka (though it's important to note that this is just a theoretical exercise):
 
 **Features of the Droideka:**
@@ -57,4 +61,6 @@ It's also worth noting that even if a shield technology were developed, it would
 
 ## Ref
 - https://projecthub.arduino.cc/nicogou/droideka-e6bb88
+- https://starwars.fandom.com/wiki/Droideka
+
 - 
